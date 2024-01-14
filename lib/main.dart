@@ -139,6 +139,7 @@ class Bottom extends StatelessWidget{
           Icon(Icons.add),
           Icon(Icons.video_collection),
           Icon(Icons.account_circle),
+
         ],
       ),
     ) ;
