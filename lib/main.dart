@@ -117,13 +117,11 @@ class MyApp extends StatelessWidget {
               ],
             ),
           ),
-          bottomNavigationBar:Expanded(
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Bottom(),
-              ],
-            ),
+          bottomNavigationBar:Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Bottom(),
+            ],
           ) ,
         )
     );
@@ -134,18 +132,14 @@ class Bottom extends StatelessWidget{
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: SizedBox(
-        height: 30,
-        width: 100,
-        child: Row(
-          children: [
-            Icon(Icons.home),
-            Icon(Icons.search_rounded),
-            Icon(Icons.add),
-            Icon(Icons.video_collection),
-            Icon(Icons.account_circle),
-          ],
-        ),
+      child: Row(
+        children: [
+          Icon(Icons.home),
+          Icon(Icons.search_rounded),
+          Icon(Icons.add),
+          Icon(Icons.video_collection),
+          Icon(Icons.account_circle),
+        ],
       ),
     ) ;
   }
